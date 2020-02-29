@@ -21,7 +21,7 @@ public class TopDown : MonoBehaviour {
     }
 
     public void Update () {
-        if (Input.GetButtonDown ("CameraSwitch")) {
+        if (Input.GetKey (KeyCode.T)) {
             TargetOffset = new Vector3 (0f, 40f, -30f);
         }
         if (Input.GetKey(KeyCode.Y)) {

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerMovementThreeD : MonoBehaviour
 {   
 
     public float walkSpeed = 8f;
