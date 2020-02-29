@@ -5,13 +5,25 @@ using UnityEngine;
 public class ChangeShader : MonoBehaviour
 {
     public Material[] material;
+    public GameObject obj;
     Renderer rend;
 
+    public void SetShader()
+    {
+        if (rend.sharedMaterial == material[0])
+        {
+            rend.sharedMaterial = material[1];
+        }
+        else
+        {
+            rend.sharedMaterial = material[0];
+        }
+    }
 
     // Start is called before the first frame update
     void Start()
     {
-        rend = GetComponent<Renderer>();
+        rend = obj.GetComponent<Renderer>();
         rend.enabled = true;
         rend.sharedMaterial = material[0];
     }
